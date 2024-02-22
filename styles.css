@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(https://images.pexels.com/photos/3934623/pexels-photo-3934623.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+}
+
+h2,
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.main {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.convert-container {
+  background-color: #595f72;
+  width: 90%;
+  max-width: 650px;
+  height: auto;
+  padding: 20px;
+  margin: 50px auto;
+  text-align: center;
+  border: 3px solid gold;
+}
+
+.convert-container label {
+  font-size: 24px;
+  color: #fff;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.convert-container input {
+  background-color: #575d90;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+#convert-btn {
+  background: linear-gradient(45deg, gold, orange);
+  padding: 10px 20px;
+  font-size: 24px;
+  color: #0a0a23;
+  display: block;
+  width: 100%;
+  border: none;
+  margin: 20px auto;
+}
+
+.convert-container input::placeholder {
+  color: #fff;
+}
+
+.convert-container input:focus {
+  outline: 2px solid gold;
+  outline-color: black;
+}
+
+#convert-btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#output {
+  background-color: #595f72;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  padding: 20px;
+  margin: 50px auto;
+  text-align: center;
+  border: 3px solid gold;
+  color: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+.errortext {
+  font-size: 20px;
+}
+
+/* Media Query for mobile phones */
+@media (max-width: 768px) {
+  .convert-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  #output {
+    width: 90%;
+    padding: 10px;
+  }
+}
